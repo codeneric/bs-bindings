@@ -1,12 +1,12 @@
 {
   "name": "bs-abort-controller",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Codeneric <github@codeneric.com> (https://codeneric.com)",
+  "author": "Alex Schwabauedr <alex@codeneric.com> (https://codeneric.com)",
   "license": "MIT",
-  "gitHead": "f4997e64d9d5919b1e08327e01e938aeb4879882"
+  "gitHead": "7e1a8c0ed342c431ebf782572db74dc6c4ae1df1"
 }
