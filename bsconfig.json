@@ -6,6 +6,11 @@
     {
       "dir": "packages",
       "subdirs": true
+    },
+    {
+      "dir": "usages",
+      "type": "dev",
+      "subdirs": true
     }
   ]
 }

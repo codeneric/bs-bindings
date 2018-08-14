@@ -1,0 +1,62 @@
+0 silly argv { _: [ 'publish' ],
+0 silly argv   progress: true,
+0 silly argv   sort: true,
+0 silly argv   ci: false,
+0 silly argv   loglevel: 'info',
+0 silly argv   lernaVersion: '3.0.3',
+0 silly argv   '$0': 'lerna' }
+1 info version 3.0.3
+2 verbose rootPath /home/alex/Projects/bs-bindings
+3 silly argv { _: [ 'publish' ],
+3 silly argv   progress: true,
+3 silly argv   sort: true,
+3 silly argv   ci: false,
+3 silly argv   loglevel: 'info',
+3 silly argv   lernaVersion: '3.0.3',
+3 silly argv   '$0': 'lerna' }
+4 info version 3.0.3
+5 verbose rootPath /home/alex/Projects/bs-bindings
+6 info current version 0.0.11
+7 silly isAnythingCommitted
+8 verbose isAnythingCommitted 1
+9 silly currentBranch
+10 verbose currentBranch master
+11 silly isBehindUpstream
+12 silly isBehindUpstream master is behind origin/master by 0 commit(s) and ahead by 0
+13 silly hasTags
+14 verbose hasTags true
+15 info Looking for changed packages since v0.0.11.
+16 silly diffSinceIn v0.0.11 packages/bs-abort-controller
+17 silly diff packages/bs-abort-controller/AbortController.re
+17 silly diff packages/bs-abort-controller/package.json
+18 verbose updated bs-abort-controller
+19 silly gitAdd [ '/home/alex/Projects/bs-bindings/packages/bs-abort-controller/package.json',
+19 silly gitAdd   '/home/alex/Projects/bs-bindings/lerna.json' ]
+20 silly gitCommit v0.0.12
+21 verbose git [ 'commit', '-m', 'v0.0.12' ]
+22 silly gitTag v0.0.12
+23 verbose git [ 'tag', 'v0.0.12', '-m', 'v0.0.12' ]
+24 info git Pushing tags...
+25 silly gitPush origin master
+26 success version finished
+27 silly batched [ PackageGraphNode {
+27 silly batched     name: 'bs-abort-controller',
+27 silly batched     externalDependencies: Map {},
+27 silly batched     localDependencies: Map {},
+27 silly batched     localDependents: Map {} } ]
+28 silly verifyNpmRegistry
+29 silly getExecOpts /home/alex/Projects/bs-bindings undefined
+30 silly verifyNpmPackageAccess
+31 silly getExecOpts /home/alex/Projects/bs-bindings undefined
+32 info publish Publishing packages to npm...
+33 silly getCurrentSHA
+34 verbose getCurrentSHA f0bde74e192b8aaca719d7e83a6b68048efa48b9
+35 verbose pack [ 'bs-abort-controller' ]
+36 silly getExecOpts /home/alex/Projects/bs-bindings undefined
+37 silly exec npm [ 'pack',
+37 silly exec   '/home/alex/Projects/bs-bindings/packages/bs-abort-controller',
+37 silly exec   '--json' ]
+38 error SyntaxError: Unexpected end of JSON input
+38 error     at JSON.parse (<anonymous>)
+38 error     at proc.then (/home/alex/Projects/bs-bindings/node_modules/@lerna/npm-publish/npm-publish.js:96:27)
+38 error     at <anonymous>

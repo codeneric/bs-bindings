@@ -3,5 +3,6 @@
     "bs-platform": "^4.0.3",
     "lerna": "^3.0.2"
   },
-  "name": "bs-binding-template"
+  "name": "bs-bindings",
+  "author": "Alex Schwabauedr <alex@codeneric.com> (https://codeneric.com)"
 }
