@@ -1,6 +1,6 @@
 {
   "name": "bs-abort-controller",
-  "version": "0.0.14",
+  "version": "0.0.15",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -11,5 +11,5 @@
   },
   "author": "Alex Schwabauedr <alex@codeneric.com> (https://codeneric.com)",
   "license": "MIT",
-  "gitHead": "fc8b5812bf4cff3608b11a7800a016356b64295f"
+  "gitHead": "a0618bd8fe3ea75726e8731977cd903d779d3eb1"
 }
