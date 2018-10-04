@@ -1,0 +1,118 @@
+0 silly input [ 'publish', 'bs-raven' ]
+1 silly flags { _: [ 'publish', 'bs-raven' ],
+1 silly flags   'reject-cycles': false,
+1 silly flags   rejectCycles: false,
+1 silly flags   'force-publish': 'bs-abort-controller',
+1 silly flags   forcePublish: 'bs-abort-controller' }
+2 verbose rootPath /home/alex/Projects/bs-bindings
+3 info version 2.11.0
+4 silly isInitialized
+5 silly isInitialized true
+6 silly existsSync /home/alex/Projects/bs-bindings/VERSION
+7 info versioning independent
+8 silly initialize attempt
+9 silly isDetachedHead
+10 silly getCurrentBranch
+11 verbose getCurrentBranch master
+12 verbose isDetachedHead false
+13 silly getCurrentBranch
+14 verbose getCurrentBranch master
+15 silly getUpdates
+16 info Checking for updated packages...
+17 silly hasTags
+18 verbose hasTags true
+19 silly getLastTag
+20 verbose getLastTag bs-abort-controller@0.0.19
+21 info Comparing with bs-abort-controller@0.0.19.
+22 silly diffSinceIn bs-abort-controller@0.0.19 packages/bs-raven
+23 silly diff packages/bs-raven/package.json
+24 verbose updated bs-abort-controller
+25 verbose updated bs-raven
+26 info Checking for prereleased packages...
+27 silly collectDependents
+28 silly isPackageDependentOf bs-abort-controller bs-abort-controller
+29 silly isPackageDependentOf bs-abort-controller bs-raven
+30 silly isPackageDependentOf bs-raven bs-abort-controller
+31 silly isPackageDependentOf bs-raven bs-raven
+32 silly collectUpdates
+33 verbose has filtered update bs-abort-controller
+34 verbose has filtered update bs-raven
+35 silly initialize success
+36 silly execute attempt
+37 silly runScriptSync preversion bs-bindings
+38 silly runScriptSync preversion bs-abort-controller
+39 silly runScriptSync version bs-abort-controller
+40 silly runScriptSync preversion bs-raven
+41 silly runScriptSync version bs-raven
+42 silly runScriptSync version bs-bindings
+43 silly addFile /home/alex/Projects/bs-bindings/packages/bs-abort-controller/package.json
+44 silly addFile /home/alex/Projects/bs-bindings/packages/bs-raven/package.json
+45 silly commit Publish
+45 silly commit
+45 silly commit  - bs-abort-controller@0.0.20
+45 silly commit  - bs-raven@1.0.2
+46 verbose commit [ 'commit',
+46 verbose commit   '--no-verify',
+46 verbose commit   '-F',
+46 verbose commit   '/tmp/f54eb99a-7694-4b62-ba8c-2d04a33e9e6d/lerna-commit.txt' ]
+47 silly addTag bs-abort-controller@0.0.20
+48 silly addTag bs-raven@1.0.2
+49 silly runScriptSync postversion bs-abort-controller
+50 silly runScriptSync postversion bs-raven
+51 silly runScriptSync postversion bs-bindings
+52 info publish Publishing packages to npm...
+53 silly existsSync /home/alex/Projects/bs-bindings/packages/bs-abort-controller/scripts/prepublish.js
+54 verbose execScript No prepublish script found at /home/alex/Projects/bs-bindings/packages/bs-abort-controller/scripts/prepublish.js
+55 silly existsSync /home/alex/Projects/bs-bindings/packages/bs-raven/scripts/prepublish.js
+56 verbose execScript No prepublish script found at /home/alex/Projects/bs-bindings/packages/bs-raven/scripts/prepublish.js
+57 verbose publishing bs-abort-controller
+58 silly publishTaggedInDir latest bs-abort-controller
+59 silly getExecOpts { cwd: '/home/alex/Projects/bs-bindings/packages/bs-abort-controller' }
+60 verbose publishing bs-raven
+61 silly publishTaggedInDir latest bs-raven
+62 silly getExecOpts { cwd: '/home/alex/Projects/bs-bindings/packages/bs-raven' }
+63 error publish Retrying failed publish: bs-raven
+64 verbose publish error undefined
+65 verbose publishing bs-raven
+66 silly publishTaggedInDir latest bs-raven
+67 silly getExecOpts { cwd: '/home/alex/Projects/bs-bindings/packages/bs-raven' }
+68 error publish Retrying failed publish: bs-raven
+69 verbose publish error undefined
+70 verbose publishing bs-raven
+71 silly publishTaggedInDir latest bs-raven
+72 silly getExecOpts { cwd: '/home/alex/Projects/bs-bindings/packages/bs-raven' }
+73 error publish Retrying failed publish: bs-raven
+74 verbose publish error undefined
+75 verbose publishing bs-raven
+76 silly publishTaggedInDir latest bs-raven
+77 silly getExecOpts { cwd: '/home/alex/Projects/bs-bindings/packages/bs-raven' }
+78 info published bs-abort-controller
+79 silly existsSync /home/alex/Projects/bs-bindings/packages/bs-abort-controller/scripts/postpublish.js
+80 verbose execScript No postpublish script found at /home/alex/Projects/bs-bindings/packages/bs-abort-controller/scripts/postpublish.js
+81 error publish Retrying failed publish: bs-raven
+82 verbose publish error undefined
+83 verbose publishing bs-raven
+84 silly publishTaggedInDir latest bs-raven
+85 silly getExecOpts { cwd: '/home/alex/Projects/bs-bindings/packages/bs-raven' }
+86 error publish Ran out of retries while publishing bs-raven Error: Command failed: npm publish --tag latest
+86 error publish npm ERR! publish Failed PUT 403
+86 error publish npm ERR! code E403
+86 error publish npm ERR! You do not have permission to publish "bs-raven". Are you logged in as the correct user? : bs-raven
+86 error publish
+86 error publish npm ERR! A complete log of this run can be found in:
+86 error publish npm ERR!     /home/alex/.npm/_logs/2018-10-04T10_19_45_525Z-debug.log
+86 error publish
+86 error publish     at Promise.all.then.arr (/home/alex/.nvm/versions/node/v9.2.0/lib/node_modules/lerna/node_modules/execa/index.js:236:11)
+86 error publish     at <anonymous>
+86 error publish     at process._tickCallback (internal/process/next_tick.js:188:7)
+87 error execute callback with error
+88 error Error: Command failed: npm publish --tag latest
+88 error npm ERR! publish Failed PUT 403
+88 error npm ERR! code E403
+88 error npm ERR! You do not have permission to publish "bs-raven". Are you logged in as the correct user? : bs-raven
+88 error
+88 error npm ERR! A complete log of this run can be found in:
+88 error npm ERR!     /home/alex/.npm/_logs/2018-10-04T10_19_45_525Z-debug.log
+88 error
+88 error     at Promise.all.then.arr (/home/alex/.nvm/versions/node/v9.2.0/lib/node_modules/lerna/node_modules/execa/index.js:236:11)
+88 error     at <anonymous>
